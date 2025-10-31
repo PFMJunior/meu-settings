@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+body,
+html,
+#app {
+  background-color: #f8fafc !important; /* bg-slate-50 padrão Tailwind */
+}
+
+.dark body,
+.dark html,
+.dark #app {
+  background-color: #0f172a !important; /* bg-slate-900 padrão Tailwind */
+}
+
+/* 💡 REMOVA ESTE BLOCO:
+body,
+.p-component,
+.p-dialog,
+.p-sidebar,
+.p-menu,
+.p-menubar,
+.p-panel,
+.p-card {
+  background-color: transparent !important;
+}
+*/
