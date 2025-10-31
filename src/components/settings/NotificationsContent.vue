@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col sm:flex-row gap-8">
-    <!-- Notificações por e-mail -->
     <Card
       :class="cardClass"
       class="flex-1 transition-all duration-300 hover:-translate-y-1 rounded-2xl p-4"
@@ -20,7 +19,6 @@
       </template>
     </Card>
 
-    <!-- Notificações do sistema -->
     <Card
       :class="cardClass"
       class="flex-1 transition-all duration-300 hover:-translate-y-1 rounded-2xl p-4"

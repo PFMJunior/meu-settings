@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col sm:flex-row gap-8">
-    <!-- Visibilidade da conta -->
     <Card
       :class="cardClass"
       class="flex-1 transition-all duration-300 hover:-translate-y-1 rounded-2xl p-4"
@@ -20,7 +19,6 @@
       </template>
     </Card>
 
-    <!-- Controle de atividades -->
     <Card
       :class="cardClass"
       class="flex-1 transition-all duration-300 hover:-translate-y-1 rounded-2xl p-4"
