@@ -3,13 +3,16 @@
 body,
 html,
 #app {
-  background-color: #f8fafc !important; /* bg-slate-50 padrão Tailwind */
+  background-color: #f8fafc !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .dark body,
 .dark html,
 .dark #app {
-  background-color: #0f172a !important; /* bg-slate-900 padrão Tailwind */
+  background-color: #0f172a !important;
 }
 
 /* 💡 REMOVA ESTE BLOCO:
