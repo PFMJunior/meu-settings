@@ -23,7 +23,7 @@
           }"
         >
           <button class="mb-4" @click="open = false"></button>
-          <Sidebar />
+          <Sidebar @close="open = false" :is-mobile="true" />
         </div>
       </div>
     </transition>
