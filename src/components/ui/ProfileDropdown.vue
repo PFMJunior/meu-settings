@@ -34,10 +34,10 @@
         <button class="w-full text-left px-4 py-2 !text-black cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700" @click="goToProfile">
           Perfil
         </button>
-        <div class="border-t border-slate-200 dark:border-slate-700 my-1"></div>
+        <!-- <div class="border-t border-slate-200 dark:border-slate-700 my-1"></div>
         <button class="w-full cursor-pointer !text-black text-left px-4 py-2 hover:bg-red-50 dark:hover:bg-red-900 text-red-600" @click="logout">
           <i class="!text-black pi pi-sign-out mr-2"></i> Sair
-        </button>
+        </button> -->
       </div>
     </transition>
   </div>
