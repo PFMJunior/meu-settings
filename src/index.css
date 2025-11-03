@@ -14,16 +14,3 @@ html,
 .dark #app {
   background-color: #0f172a !important;
 }
-
-/* 💡 REMOVA ESTE BLOCO:
-body,
-.p-component,
-.p-dialog,
-.p-sidebar,
-.p-menu,
-.p-menubar,
-.p-panel,
-.p-card {
-  background-color: transparent !important;
-}
-*/

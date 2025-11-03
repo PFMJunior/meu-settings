@@ -15,7 +15,6 @@ const config: StorybookConfig = {
     builder: '@storybook/builder-vite',
   },
   viteFinal: async (config) => {
-    // Ajuste para resolver alias @ se você usa no projeto
     return mergeConfig(config, {
       resolve: {
         alias: {

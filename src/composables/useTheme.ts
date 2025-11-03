@@ -1,4 +1,3 @@
-// src/composables/useTheme.ts
 import { ref } from 'vue'
 
 type Theme = 'light' | 'dark'

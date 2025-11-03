@@ -30,7 +30,6 @@
       </button>
     </div>
 
-    <!-- Botões -->
     <div class="flex justify-end gap-3 mt-8">
       <Button
         label="Cancelar"

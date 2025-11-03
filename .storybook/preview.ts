@@ -4,7 +4,6 @@ import '../src/index.css';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 
-// Configurar globalmente o PrimeVue para todas as stories
 setup((app) => {
   app.use(PrimeVue);
 });
