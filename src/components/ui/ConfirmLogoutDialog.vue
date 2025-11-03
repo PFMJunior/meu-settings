@@ -51,18 +51,24 @@
 
 <script setup lang="ts">
 import Button from 'primevue/button'
-import { inject } from 'vue'
+import { inject, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useTheme } from '@/composables/useTheme'
+import { useTheme } from '../../composables/useTheme'
 
-const dialogRef = inject('dialogRef') as any
+const fallbackDialog = ref({ close: () => {} })
+const dialogRef = inject('dialogRef', fallbackDialog) as any
+
 const { theme } = useTheme()
 const router = useRouter()
 
 function handleLogout() {
-  console.log('Logout confirmado. Redirecionando para /settings/...')
+  console.log('Logout confirmado. Redirecionando para /settings/')
   dialogRef.value.close(true)
-  router.push('/settings/')
+  try {
+    router.push('/settings/')
+  } catch (err) {
+    console.warn('Router não disponível:', err)
+  }
 }
 
 function closeDialog(confirmed: boolean) {

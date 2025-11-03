@@ -45,9 +45,11 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { useUserProfile } from '@/composables/useUserProfile'
+
 import { useRouter } from 'vue-router'
-import { useTheme } from '@/composables/useTheme'
+import { useTheme } from '../../composables/useTheme'
+import { useUserProfile } from '../../composables/useUserProfile'
+
 
 const root = ref<HTMLElement | null>(null)
 const open = ref(false)
@@ -72,11 +74,6 @@ document.addEventListener('click', (e) => {
 function goToProfile() {
   open.value = false
   router.push('/settings/account')
-}
-
-function logout() {
-  open.value = false
-  console.log('Usuário saiu via dropdown')
 }
 </script>
 

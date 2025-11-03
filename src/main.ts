@@ -10,7 +10,9 @@ import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import { VueQueryPlugin } from '@tanstack/vue-query'
 import './index.css'
+import { useTheme } from './composables/useTheme';
 
+useTheme();
 const app = createApp(App)
 app.use(router)
 app.use(PrimeVue)

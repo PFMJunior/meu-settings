@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.app.json",
+  "include": ["../src/**/*", "./**/*"],
+  "compilerOptions": {
+    "types": ["node"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true
+  }
+}

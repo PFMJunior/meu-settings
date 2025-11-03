@@ -1,35 +1,54 @@
-# Meu Settings
+# ⚙️ Meu Settings
 
-Projeto de configurações de conta, privacidade e notificações, desenvolvido com Vue 3, TypeScript, Vite, Tailwind CSS e PrimeVue.
+Projeto de **configurações de conta, privacidade e notificações**, desenvolvido com **Vue 3**, **TypeScript**, **Vite**, **Tailwind CSS**, **PrimeVue** e **Vitest**.  
+Inclui suporte a **modo claro/escuro**, **componentes reutilizáveis**, **Storybook** e **testes unitários automatizados**.
+
+---
 
 ## ✨ Tecnologias Utilizadas
 
-- [Vue 3](https://vuejs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [PrimeVue](https://primevue.org/) + [PrimeIcons](https://primefaces.org/primevue/icons/)
-- [Vue Router](https://router.vuejs.org/)
-- [@tanstack/vue-query](https://tanstack.com/query/latest/docs/framework/vue/overview) (para dados reativos)
-- [Axios](https://axios-http.com/)
+- ⚡ [Vue 3](https://vuejs.org/) — framework progressivo para interfaces reativas  
+- 🧠 [TypeScript](https://www.typescriptlang.org/) — tipagem estática para código mais seguro  
+- 🚀 [Vite](https://vitejs.dev/) — bundler rápido para desenvolvimento moderno  
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) — estilização utilitária e responsiva  
+- 💎 [PrimeVue](https://primevue.org/) + [PrimeIcons](https://primefaces.org/primevue/icons/) — componentes de UI modernos  
+- 🔗 [Vue Router](https://router.vuejs.org/) — roteamento de páginas  
+- 🔄 [@tanstack/vue-query](https://tanstack.com/query/latest/docs/framework/vue/overview) — gerenciamento reativo de dados  
+- 🌐 [Axios](https://axios-http.com/) — requisições HTTP  
+- 🧪 [Vitest](https://vitest.dev/) + [Vue Test Utils](https://test-utils.vuejs.org/) — testes unitários rápidos  
+- 📚 [Storybook](https://storybook.js.org/) — visualização e documentação de componentes isoladamente  
+
+---
 
 ## 📦 Instalação
 
 ```bash
-git clone https://github.com/SEU_USUARIO/meu-settings.git
+git clone git@github.com:PFMJunior/meu-settings.git
 cd meu-settings
 npm install
 ```
 
-## 🚀 Rodando o Projeto
+🚀 Rodando o Projeto
 
 ```bash
 npm run dev
 ```
+Acesse: http://localhost:5173
 
-Acesse: [http://localhost:5173](http://localhost:5173)
+🧪 Rodando os Testes
 
-## 🗂️ Estrutura de Pastas
+```bash
+npm run test
+```
+
+📖 Visualizando Componentes no Storybook
+
+```bash
+npm run storybook
+```
+Acesse: http://localhost:6006
+
+🗂️ Estrutura de Pastas
 
 ```
 ├── src/
@@ -44,6 +63,8 @@ Acesse: [http://localhost:5173](http://localhost:5173)
 │   ├── App.vue
 │   ├── main.ts
 │   └── index.css
+├── tests/                     # Testes unitários (Vitest + Vue Test Utils)
+├── .storybook/                # Configuração do Storybook
 ├── public/                    # Arquivos estáticos
 ├── index.html
 ├── tailwind.config.cjs
@@ -51,22 +72,26 @@ Acesse: [http://localhost:5173](http://localhost:5173)
 └── package.json
 ```
 
-## 🧩 Funcionalidades
+🧩 Funcionalidades
 
-- Autenticação fictícia e gerenciamento de perfil
-- Troca de tema (claro/escuro)
-- Configurações de conta, privacidade e notificações
-- Layout responsivo (sidebar, mobile sidebar, topbar)
-- Componentização e uso de PrimeVue para UI moderna
-- Rotas dinâmicas para subpáginas de configurações
+✅ Gerenciamento de conta, privacidade e notificações
+🌗 Alternância de tema (claro/escuro) com persistência
+🧱 Componentização e reuso com PrimeVue + Tailwind
+📱 Layout responsivo (Sidebar, Topbar, Mobile Sidebar)
+⚙️ Composables Vue 3 para lógica reativa
+🧪 Testes unitários com mocks e cobertura real de comportamento
+🧰 Storybook para desenvolvimento e documentação visual de componentes
 
-## 🛠️ Scripts Disponíveis
+🛠️ Scripts Disponíveis
 
 - `npm run dev` — inicia o servidor de desenvolvimento
 - `npm run build` — build de produção
 - `npm run preview` — preview do build
+- `npm run test` — Executa os testes unitários (Vitest)
+- `npm run storybook` — Inicia o Storybook
+- `npm run build-storybook` — Gera a versão estática do Storybook
 
-## 📋 Como contribuir
+📋 Como Contribuir
 
 1. Faça um fork do projeto
 2. Crie uma branch: `git checkout -b minha-feature`
